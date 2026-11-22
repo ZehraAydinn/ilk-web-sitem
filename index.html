@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+                <title>İlk Web Sitem</title>
+                <style>
+                    img {
+                        width: 150px;
+                        height: 150px;
+                        display: block;
+                        margin: auto;
+                        border-radius:50%;
+                    }
+
+                    body{
+                        background-color: lightblue
+                    }
+
+                    h1{
+                        color:darkblue;
+                        font-size:36px;
+                        text-align:center;
+                        margin-bottom:30px;
+                        border:2px solid red;
+                        padding: 20px;
+                        margin: 30px;
+
+                    }
+
+                    h2{
+                        color:darkgreen; 
+                        font-size:28px;
+                        text-align: center;
+                    }
+                    h3, h4{
+                        text-align: center;
+                    }
+
+                    p{
+                        color:purple;
+                        font-size:18px;
+                        text-align:center;
+                        padding:10px;
+                        border:1px solid purple;
+                        margin:20px;
+                    }
+                    .kart{
+                        background-color: white;
+                        width:80%;
+                        margin: 30px auto;
+                        padding: 20px;
+                        border-radius:15px;
+
+                    }
+
+                    .kutular{
+                        display:flex;
+                        gap:30px;
+                        justify-content: center;
+                        align-items:flex-end;
+                        height: 200px;
+
+                    }
+                    .kutu{
+                        background-color: lightblue;
+                        padding: 20px;
+                        border-radius: 10px;
+                        transition: 0.3s;
+
+                    }
+
+
+
+                    @media (max-width:600px){
+                        .kart{
+                            width:90%;
+                            padding:10px;
+                        }
+                        .kutular{
+                        flex-direction: column;
+                    }
+                    }
+
+                    
+
+
+                    .kutu:hover{
+                        background-color:darkblue;
+                        color: white;
+                        transform: scale(1.1);
+                    }
+
+
+                    button{
+                        background-color:darkblue;
+                        color:white;
+                        padding: 12px 25px;
+                        border: none;
+                        border-radius: 8px;
+                        font-size: 16px;
+                        cursor:pointer; 
+                        transition: 0.3s;
+
+                    }
+
+                    button:hover{
+                        background-color:purple;
+                        transform:scale(1.05);
+                    }
+
+                    input,textarea{
+                        width: 90%;
+                        padding:10px;
+                        margin-top:5px;
+                        border: 1px solid gray;
+                        border-radius: 6px;
+                        font-size: 15px;
+                    }
+                    textarea{
+                        height: 100px;
+                    }
+
+
+                    .yeni-kutu{
+                        background-color: white;
+                        border: 2px solid black;
+                        padding: 20px;
+                        margin:10px;
+                        width: 100px;
+                        text-align: center; 
+                    }
+
+                    .urun-kart{
+                        background-color: white;
+                        width:200px;
+                        padding:20px;
+                        margin:15px;
+                        border-radius:15px;
+                        text-align: center;
+                        box-shadow: 0 4px 10px gray;
+                    }
+
+                    .urun-kart button{
+                        background-color: darkblue;
+                        color: white;
+                        padding: 10px 20px;
+                        border-radius: 8px;  
+                    }
+
+                   #kutular{
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content:center;
+                        gap: 20px;
+                    } 
+
+                    .ogrenci-kart {
+                   background-color: lightblue;
+                   padding: 15px;
+                   margin: 10px;
+                 border-radius: 10px;
+}
+
+  
+
+                </style>
+    </head>
+
+
+    <body>
+       
+        <h1>Merhaba, Benim İlk Websitem!</h1>
+        <img src="IMG_4990.jpg" alt="Profil fotoğrafım">
+        <h2>Adım: Zehra Aydın</h2>
+        <h3>Kullanmak istediğim takma ad: Elçin</h3>
+        
+
+        <p>Ben Bilgisayar Mühendisliği öğrencisiyim.</p>
+
+        <p>Ben İstanbul Sabahattin Zaim Üniversitesi'nde
+             3. sınıf Bilgisayar Mühendisliği öğrencisiyim.
+             Şu an kendimi web programlama alanında geliştirmek istiyorum.
+            </p>
+
+             <a href="https://www.google.com">         
+                Google'a git.Sevdiğim bir sitedir.</a>
+
+             <h3> Bildiğim Diller: </h3>
+                <ul> 
+                    <li>C</li>
+                    <li>C++</li>
+                    <li>SQL</li>
+                    <li>Python</li>
+                    <li>Java</li>
+                </ul>
+
+                
+
+                <a href="https://www.google.com" target= "_blank">
+                    Google'a git.
+                </a>
+
+                <h4>Öğrenmek İstediğim Teknolojiler: </h4>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>React</li>
+                    </ul>
+
+                    <div class="kart">
+                        <h2>Benimle İletişime Geç</h2>
+                        <form>
+                            <label> Adınız:</label>
+                            <input type="text" placeholder="Adınızı Yazın" required>
+                        
+                        <br><br>
+                    
+
+                        <label>E-posta:</label>
+                        <input type="text" placeholder="E-mailinizi giriniz." required>
+
+                        <br><br>
+
+                        <label>Mesajınız:</label>
+                        <textarea placeholder="Mesajınızı yazınız"></textarea>
+                        
+                        <br><br>
+
+                        <button type = "submit">Gönder</button>
+                        </form>
+
+
+
+
+
+
+                        <div class="kutular">
+                            <div class="kutu">HTML</div>
+                            <div class="kutu">CSS</div>
+                            <div class="kutu">JavaScript</div>
+                        </div>
+
+                    </div>
+
+
+                    <button> Benimle iletişime geç</button>
+
+
+                    <p id="mesaj">Henüz butona basmadın.</p>
+
+                    <button onclick = "mesajGoster()">Bana tıkla</button> 
+
+                    <button onclick = "renkDegistir()">Rengi Değiştir</button>
+
+                    <button onclick = "renkDegistirr()">Rengi Değiştir</button>
+                    
+                    <button onclick = "renkDegistiir()">rengi Değiştir</button>
+
+                    <div id= "kutular"></div>
+
+                    <button onclick = "selamVer()">Bana tıkla</button> 
+
+                    <button id="selamButonu">Bana tıkla</button>
+
+                    <button id="helloButonu">Bana tıkla canım</button>
+
+                    <button id="tikla">Tıkla</button>
+
+
+                    <h5>Tıklama Sayacı</h5>
+                    <p id = "sayac">0</p>
+                    <button id ="sayacButonu">Tıkla!</button>
+
+                    <button id="azaltButonu">Azalt</button>
+
+
+                     
+                    <h2> Öğrenciler</h2>
+                    <div id= "ogrenciKutulari"></div>
+
+                    <h2>İsim kaydetme uygulaması</h2>
+                    <input type="text" id="isimInput" placeholder ="İsmini yaz">
+
+                    <button id="kaydetButonu">Kaydet</button>
+                    <p id="sonuc"></p>
+
+                    <button id="silButonu">İsmi sil</button>
+
+                    <h2>Öğrenci Kaydetme</h2>
+                    <input type="text" id="ogrenciIsim" placeholder="Öğrenci adı">
+                    <input type="number" id="ogrenciYas" placeholder="Yaş">
+                    <input type="text" id="ogrenciBolum" placeholder="Bölüm">
+
+                    <button id="ogrenciyiKaydet">Öğrenciyi Kaydet</button>
+
+                    <p id="ogrenciSonuc"></p>
+
+                    <h2>Sayı Dönüştürme</h2>
+                    <input type="text" id="sayiInput" placeholder="Bir sayı gir">
+                    <button id="donusturButonu">Dönüştür</button>
+                    <p id="donusturSonuc"></p>
+
+                    <h2>Gecikmeli Mesaj</h2>
+                    <button id="mesajButonu">Mesajı göster</button>
+                    <p id="gecikmeliMesaj"></p>
+
+                    <h2>Öğrenci Bilgisi Yükleme</h2>
+                    <button id="ogrenciYukleButonu">Öğrenciyi Yükle</button>
+                    <p id="ogrenciBilgiSonuc"></p>
+
+                    <h2>API Kullanıcı Listesi</h2>
+                    <button id="kullanicilariGetir">Kullanıcıları Getir</button>
+                    <div id="kullaniciListesi"></div>
+
+
+
+                
+
+
+
+                   
+
+                
+
+ <script>
+    // let isim = "Zehra Aydın";
+    // let bolum = "Computer Engineering";
+    // let yas = 20;
+    // let ogrenci = true;
+
+    // alert(isim);
+    // alert(bolum);
+    // alert(yas);
+    // alert(ogrenci);
+
+    // let sayi1=10;
+    // let sayi2=5;
+    // alert(sayi1+sayi2);
+    // alert(sayi1-sayi2);
+    // alert(sayi1/sayi2);
+    // alert(sayi1*sayi2);
+
+    // let puan=80;
+    // puan=puan+10;
+    // alert(puan);
+
+
+    function mesajGoster(){
+        document.getElementById("mesaj").textContent = "Butona bastın!";
+    }
+
+    function renkDegistir(){
+        document.body.style.background = "lightgreen";
+    }
+
+    let renk=0;
+    function renkDegistirr(){
+        if(renk==0){
+            document.body.style.backgroundColor="pink";
+            renk=1;
+        }else if(renk==1){
+            document.body.style.backgroundColor="orange";
+            renk=2;
+        }
+        else{
+            document.body.style.backgroundColor= "blue"
+            renk=2
+        }
+    }
+
+
+
+    let renkler=["pink","orange","lightgreen"];
+    let i=0;
+    function renkDegistiir(){
+        document.body.style.backgroundColor=renkler[i];
+        i++;
+        if(i==renkler.length){
+            i=0;
+        }
+    }
+
+
+    let kutular=document.getElementById("kutular");
+
+    let urunler= [
+        "Iphone",
+        "Macbook",
+        "ipad",
+        "Airpods"];
+
+    
+    for (let i = 0; i < urunler.length; i++) {
+
+    kutular.innerHTML += `
+        <div class="urun-kart">
+            <h3>${urunler[i]}</h3>
+            <p>Bu ürün hakkında bilgi.</p>
+            <button onclick = "incele('${urunler[i]}')">
+                İncele
+                </button>
+        </div>
+    `;
+}
+
+function incele(urunAdi){
+    alert("Seçtiğin ürün: "+ urunAdi);
+}
+
+
+
+
+
+function selamVer(){
+    alert("Merhaba! JavaScript çalışıyor.");
+}
+
+
+
+
+
+let buton= document.getElementById("selamButonu");
+
+buton.addEventListener("click",function(){
+  alert("Merhaba");  
+});
+
+
+let helloButon= document.getElementById("helloButonu");
+helloButon.addEventListener("click",function(){
+    alert("Hoş geldin!");
+});
+helloButon.addEventListener("click",function(){
+    document.body.style.backgroundColor = "pink";
+});
+
+let buton1= document.getElementById("tikla");
+buton1.addEventListener("click",function(event){
+     event.target.style.backgroundColor = "red";
+ });
+buton1.addEventListener("click",function(event){
+    event.target.textContent="bana tıkladın!";
+
+});
+
+let sayac=0;
+sayacButonu = document.getElementById("sayacButonu");
+sayacButonu.addEventListener("click",function(event){
+
+    sayac++;
+
+    document.getElementById("sayac").textContent=sayac;
+});
+
+let azaltButonu= document.getElementById("azaltButonu");
+azaltButonu.addEventListener("click",function(){
+    if(sayac>0){
+     sayac--;
+    }
+    else{
+        alert("Sayac sıfırın altına inemez.");
+    }
+    document.getElementById("sayac").textContent=sayac;  
+});
+
+
+let ogrenciler=[
+    {
+     isim:"Ahmet",
+     yas:21,
+     bolum:"Bilgisayar Mühendisliği"
+    },
+    {
+        isim: "Zeynep",
+        yas: 22,
+        bolum: "Elektronik Mühendisliği"
+    },
+    {
+    isim: "Mehmet",
+    yas: 23,
+    bolum: "Makine Mühendisliği"  
+    },
+   
+];
+
+let ogrenciKutulari = document.getElementById("ogrenciKutulari");
+
+for(let i = 0; i < ogrenciler.length; i++){
+
+    ogrenciKutulari.innerHTML += `
+        <div class="ogrenci-kart">
+            <h3>${ogrenciler[i].isim}</h3>
+            <p>Yaş: ${ogrenciler[i].yas}</p>
+            <p>Bölüm: ${ogrenciler[i].bolum}</p>
+        </div>
+    `;
+}
+
+
+let sayilarim= [10,20,30];
+let yeniSayilar=sayilarim.map(function(sayi){
+    return sayi*2 ;
+});
+
+console.log(yeniSayilar);
+
+let sayilarr=[10,15,20,25,30];
+let sonuc=sayilarr.filter(function(sayı){
+    return sayı>20;
+});
+
+
+let sonucc= sayilarr.find(function(sayıı){
+    return sayıı>20;
+});
+
+console.log(sonuc);
+console.log(sonucc);
+
+let isimler=["Zeynep","Mehmet","Ahmet"];
+isimler.forEach(function(isim){
+    console.log("Merhaba " + isim);
+});
+
+let sonuuc= sayilarr.filter((sayi) => sayi>10 ); 
+console.log(sonuuc);
+
+
+// let sonuuc= sayilarr.filter(sayi => sayi>10 );   Yukarıdakiyle aynıdır. Arrow Functionda eğer tek parametre varsa buradaki gibi sayi değişkenine parantez koyamamız gerekmez.
+// console.log(sonuuc);
+
+let cevap= sayilarr.map(sayi => sayi+5);
+console.log(cevap);
+
+let cvp=sayilarr.map(function(sayi){
+    let yeniSayi = sayi*2;
+    return yeniSayi + 5; 
+});
+
+console.log(cvp);
+
+// let cvp=sayilarr.map(sayi => {      Arrow function halidir.
+//     let yeniSayi= sayi*2;
+//     return yeniSayi + 5;
+// });             Birden fazla işlem varsa { } kullanıyoruz.   { } kullandığımızda return yazmamız gerekiyor.
+
+
+
+
+
+
+let araba = {
+    marka: "BMW",
+    model: "320i",
+    yil: 2024,
+
+tanit: function(){
+    console.log(this.marka + " "+this.model);
+}
+};
+
+
+console.log(araba.marka);
+console.log(araba.model);
+console.log(araba.yil);
+araba.tanit();
+
+
+let kisi={
+    isim: "Zehra",
+    yas:20,
+    bolum: "Bilgisayar Mühendisliği"
+};
+
+let jsonVerisi= JSON.stringify(kisi);
+let yeniKisi= JSON.parse(jsonVerisi);
+
+console.log(yeniKisi.isim);
+console.log(yeniKisi.yas);
+
+
+localStorage.setItem("isim","Ahmet");
+
+let isimm= localStorage.getItem("isim");
+console.log(isimm);
+
+// localStorage.removeItem(isim);  veri siler
+// localStorage.clear;  Tüm verileri siler
+
+let kaydetButonu=document.getElementById("kaydetButonu");
+kaydetButonu.addEventListener("click",function(){
+    let adı=document.getElementById("isimInput").value;
+    localStorage.setItem("kullanıcıİsmi",adı);
+    document.getElementById("sonuc").textContent= "Kaydedildi! "+ adı;
+});
+
+let kayitliİsim = localStorage.getItem("kullanıcıİsmi");
+
+if (kayitliİsim) {
+    document.getElementById("sonuc").textContent =
+        "Hoş geldin, " + kayitliİsim;
+}
+
+let silButonu= document.getElementById("silButonu");
+silButonu.addEventListener("click",function(){
+    localStorage.removeItem("kullanıcıİsmi");
+    document.getElementById("sonuc").textContent = "İsim silindi.";
+
+});
+
+// let ogrenci= {
+//     isim: "Ahmet",
+//     yas: 21,
+//     bolum: "Bilgisayar Mühendisliği"
+// };
+// localStorage.setItem("ogrenci",JSON.stringify(ogrenci));
+
+// let kayitliOgrenci= JSON.parse(localStorage.getItem("ogrenci"));
+
+// console.log(kayitliOgrenci.isim);
+// console.log(kayitliOgrenci.yas);
+// console.log(kayitliOgrenci.bolum);
+
+
+let ogrenciyiKaydet = document.getElementById("ogrenciyiKaydet");
+ogrenciyiKaydet.addEventListener("click", function(){
+
+    let ogrenci={
+         isim: document.getElementById("ogrenciIsim").value,
+         yas: Number(document.getElementById("ogrenciYas").value),
+         bolum: document.getElementById("ogrenciBolum").value
+    };
+
+    localStorage.setItem("ogrenci", JSON.stringify(ogrenci));
+    document.getElementById("ogrenciSonuc").textContent=
+    "Öğrenci kaydedildi:" + ogrenci.isim;
+});
+
+let kayitliOgrencimiz= localStorage.getItem("ogrenci");
+if(kayitliOgrencimiz){
+    let ogrenciVerisi= JSON.parse(kayitliOgrencimiz);
+    document.getElementById("ogrenciSonuc").textContent= 
+    ogrenciVerisi.isim+ "-" +
+    ogrenciVerisi.yas+ "-" +
+    ogrenciVerisi.bolum ;
+}
+
+try{
+    console.log("merhaba");
+    //console.log(bilinmeyenDegisken);  // hata verir bilinmediği için. catchte ne yazıyorsa çıktıda o yazar.
+    let sonuc=10/0; //Hata vermez. infinity olarak görülür.
+    console.log("Bu değişken çalışacak mı?");
+}
+catch(hata){
+    console.log("Bir hata oluştu.")
+
+}
+ 
+try{
+    console.log(bilinmeyenDegisken);
+}
+catch(hata){
+    console.log(hata.name); //Hatanın türünü gösterir.
+    console.log(hata.message); //Hatanın açıklamasını gösterir.
+
+}
+
+try{
+    console.log("İşlem başladı");
+    console.log(bilinmeyenDegisken);
+}
+catch(hata){
+    console.log("Hata yakalandı");
+}
+finally{             // finally bloğu, hata çıksa da çıkamsa da çalışır.
+    console.log("İşlem tamamlandı");
+}
+
+
+
+
+let donusturButonu= document.getElementById("donusturButonu");
+
+donusturButonu.addEventListener("click",function(){
+    try{
+        let girilenDeger=document.getElementById("sayiInput").value;
+        if(girilenDeger.trim()===""){ //trim(): Metnin başındaki ve sonundaki boşlukları temizler.
+            throw new Error("Lütfen bir değer gir");  //new Error(): Hata nesnesi oluşturur.
+        }
+        let sayi = Number(girilenDeger);
+
+        if(isNaN(sayi)){      //isNaN():Bir değerin sayı olup olmadığını kontrol etmemize yardımcı olur.
+            throw new Error("Geçerli bir sayı girmelisin.!");  //throw: Kendimiz hata oluşturabiliriz.
+        }
+        document.getElementById("donusturSonuc").textContent=
+        "Girdiğin sayı: " + sayi;
+    }
+    catch(hata){
+        document.getElementById("donusturSonuc").textContent=
+        hata.message;
+    }
+    finally{
+        console.log("Dönüştürme işlemi tamamlandı.");
+    }
+});
+
+console.log("Başladı.");
+setTimeout(function(){        //function(){ ... }: Süre dolunca çalışmasını istediğimiz kod.Peki neden "Bitti", "3 saniye geçti!" yazısından önce geliyor? Çünkü setTimeout() JavaScript'i 3 saniye boyunca durdurmaz. JavaScript diğer kodları çalıştırmaya devam eder. Süre dolunca da verdiğimiz fonksiyonu çalıştırır.
+    console.log("3 saniye geçti");
+},3000);  //3000: Bekleme süresi, milisaniye cinsinden. 1000 milisaniye = 1 saniye.
+
+console.log("Bitti");
+
+
+
+let mesajButonu= document.getElementById("mesajButonu");
+
+mesajButonu.addEventListener("click",function(){
+    document.getElementById("gecikmeliMesaj").textContent=
+    "Mesaj 3 saniye sonra gelecek...";
+
+    setTimeout(function(){
+        document.getElementById("gecikmeliMesaj").textContent=
+        "Merhaba 3 saniye geçti.";
+    },3000);
+});
+
+
+// setInterval(function(){      //setInterval() belirlediğimiz işlemi belirli aralıklarla tekrar tekrar çalıştırır.
+//     console.log("Merhaba");       //Bu kod konsola her 2 saniyede bir "Merhaba" yazar.
+// },2000);
+
+// let sayacc=0;
+// let zamanlayici = setInterval(function(){
+//     sayacc++;
+//     console.log(sayacc);
+// },1000);
+
+// let sayacim=0;
+// let zamanlayicc = setInterval(function(){
+//     sayacim++;
+//     console.log(sayacim);
+
+//     if(sayacim===5){
+//         clearInterval(zamanlayicc);   //setInterval i durdurmak için clearInterval kullanılır.
+//     }
+// },1000);
+
+// let geriSayimDegeri=5;
+// let zamanlayicii= setInterval(function(){
+//     console.log(geriSayimDegeri);
+//     geriSayimDegeri--;
+
+//     if(geriSayimDegeri<0){
+//         clearInterval(zamanlayicii);
+//         console.log("Geri sayım bitti");
+//     }
+// },2000);
+
+let benimPromisim= new Promise(function(resolve,reject){     //Promise, gelecekte tamamlanacak bir işlemin sonucunu temsil eder.
+    resolve("İşlem başarılı.");
+});
+
+benimPromisim.then(function(sonuc){
+    console.log(sonuc);
+});
+
+
+
+let hataPromisi= new Promise(function(resolve,reject){
+    reject("Hata oluştu!");
+});
+
+hataPromisi.catch(function(hata){
+    console.log(hata);
+});
+
+
+
+
+let yeniPromisim= new Promise(function(resolve,reject){
+    let basariliMi=true; //resolve içinde yazanı döndürür. false yazsaydık reject de yazanı döndürürdü.
+
+    if(basariliMi){
+        resolve("İşlem başarıyla tamamlanadı!");
+    }
+        else{
+            reject("İşlem başarısız oldu.");
+        }   
+});
+
+yeniPromisim
+.then(function(sonuc){
+    console.log(sonuc);
+})
+.catch(function(hata){
+    console.log(hata);
+});
+
+
+
+function veriGetir(){
+    return new Promise(function(resolve,reject){
+        console.log("Veriler yükleniyor...");
+
+        setTimeout(function(){
+            resolve("Öğrenci verileri geldi!");
+        },3000);
+});
+}
+veriGetir().then(function(veri){
+    console.log(veri);
+});
+
+
+
+// async function verileriGoster(){ // async: Bir fonksiyonun başına yazılır ve o fonksiyonun Promise döndürmesini sağlar.
+//     console.log("Veri bekleniyor...");     //async ve await, Promise ile çalışmayı daha okunabilir hale getirir.
+
+//     let gelenVeri= await veriGetir();   //await: Bir Promise'in sonucunu bekler.
+//     console.log("Gelen veri: "+ gelenVeri);
+// }
+// verileriGoster();
+
+
+async function promiseDeney(){
+    let birinci=veriGetir();
+    let ikinci=await veriGetir();
+
+    console.log(birinci); //await, Promise'in tamamlanmasını bekler ve sonuç değerini almamızı sağlar.
+    console.log(ikinci);
+}
+promiseDeney();
+
+function ogrenciVerisiGetir(){
+    return new Promise(function(resolve,reject){
+        setTimeout(function(){
+            reject("Öğrenci verisi alınamadı!");
+        },2000);
+    });  
+}
+
+async function ogrenciyiGoster(){
+    try{
+        let sonuc= await ogrenciVerisiGetir();
+        console.log(sonuc);
+    }
+    catch(hata){
+        console.log("Hata: "+ hata);
+    }
+}
+ogrenciyiGoster();
+
+
+function ogrenciBilgisiGetir(){
+    return new Promise(function(resolve,reject){
+        setTimeout(function(){
+            // resolve({
+            //     isim: "Ceren",
+            //     yas: 20,
+            //     bolum: "Tıp"
+            // });     
+            reject("Sunucudan öğrenci bilgileri alınamadı.");
+         },3000);
+    })
+}
+
+async function ogrenciyiYukle(){
+    try{
+        document.getElementById("ogrenciBilgiSonuc").textContent=
+        "Öğrenci bilgileri yükleniyor...";
+        let ogrenciBilgisi= await ogrenciBilgisiGetir();
+
+        document.getElementById("ogrenciBilgiSonuc").textContent=
+        ogrenciBilgisi.isim + " - " +
+        ogrenciBilgisi.yas + " - " +
+        ogrenciBilgisi.bolum;
+    }
+    catch(hata){
+        document.getElementById("ogrenciBilgiSonuc").textContent=
+        "Bir hata oluştu: " + hata;
+
+    }
+}
+document.getElementById("ogrenciYukleButonu")
+.addEventListener("click",ogrenciyiYukle);
+
+fetch("https://jsonplaceholder.typicode.com/users")  //fetch: internet üzerinden bir adrese istek göndermemizi sağlar.
+.then(function(cevap){
+    return cevap.json(); //cevap.json(): Yanıtın gövdesini JavaScript verisine dönüştürür.
+})
+.then(function(kullanicilar){
+    console.log(kullanicilar);
+})
+.catch(function(hata){
+    console.log("Hata oluştu:",hata);
+});
+
+
+
+
+
+
+//  let kullanicilariGetir=document.getElementById("kullanicilariGetir");
+
+//  kullanicilariGetir.addEventListener("click",function(){
+//      console.log("Butona tıklandı!");
+//         fetch("https://jsonplaceholder.typicode.com/users")
+//      .then(function(cevap){
+//          return cevap.json();
+//      })
+//     .then(function(kullanicilar){
+//          console.log("Gelen kullanıcılar:", kullanicilar);
+//         let liste= document.getElementById("kullaniciListesi");
+
+//         liste.innerHTML = "";
+
+//         for(let i=0;i<kullanicilar.length;i++){
+//             liste.innerHTML+= `
+//             <div class="kutu">
+//                 <h3>${kullanicilar[i].name}</h3>
+//                 <p>${kullanicilar[i].email}</p>
+//                 <p>${kullanicilar[i].address.city}</p>
+//             </div>
+//             `;
+//         }
+//     })
+//     .catch(function(hata){
+//         console.log("Hata: ",hata);
+//     });
+// });
+
+
+// async function kullanicilariGetirAsync(){
+//     try{
+//         let cevap= await fetch("https://jsonplaceholder.typicode.com/users");
+//         let kullanicilar= await cevap.json();
+
+//         console.log(kullanicilar);
+//     }
+//     catch(hata){
+//         console.log("Hata oluştu:" ,hata);
+//     }
+// }
+// kullanicilariGetirAsync();
+
+
+
+
+
+ let kullanicilariGetir=document.getElementById("kullanicilariGetir");
+
+  kullanicilariGetir.addEventListener("click",function(){
+       kullanicilariEkranaGetir();
+  });
+                                          //Özet: kullanicilariGetirAsync() konsol denemesiydi. kullanicilariEkranaGetir() ise web sitesinde liste oluşturan asıl uygulamamız.
+async function kullanicilariEkranaGetir() {
+    try {
+        let cevapp = await fetch("https://jsonplaceholder.typicode.com/users");
+        let kullanicilar = await cevapp.json();
+
+        let liste = document.getElementById("kullaniciListesi");
+        liste.innerHTML = "";
+
+        kullanicilar.forEach(function(kullanici) {
+            liste.innerHTML += `
+                <div class="kutu">
+                    <h3>${kullanici.name}</h3>
+                    <p>${kullanici.email}</p>
+                    <p>${kullanici.address.city}</p>
+                </div>
+            `;
+        });
+    }
+
+   catch(hata) {
+    document.getElementById("kullaniciListesi").textContent =
+        "Bir hata oluştu: " + hata.message;
+   }
+}
+
+
+
+async function apiKontrol(){
+   let cevapp= await fetch("https://jsonplaceholder.typicode.com/users");
+if(cevapp.ok){              //cevap.ok: İstek başarılı mı? (true veya false)
+    console.log("İstek başarılı");
+}else{
+    console.log("Bir sorun oluştu:", cevap.status);        //cevap.status: HTTP durum kodunu verir. 200: İstek başarılı. 404: İstenen kaynak bulunamadı. 500: sunucuda hata oluştu. 
+}
+
+}
+apiKontrol();
+
+
+
+   
+
+</script>
+
+             
+
+    </body>
+</html>
