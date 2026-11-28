@@ -1,0 +1,14 @@
+name: Ilk GitHub Actions Workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  ilk-islem:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Mesaj yazdir
+        run: echo "GitHub Actions basariyla calisti!"
